@@ -1,2 +1,2 @@
 # calculator
-Create you own calculator
+Create your own calculator
