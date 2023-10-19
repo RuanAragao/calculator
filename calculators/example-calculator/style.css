@@ -1,33 +1,27 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    width: 100%;
-    max-width: 320px;
-  }
-  
-  .display,
-  .keyboard {
-    border: 1px solid #ddd;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif; 
+}
+
+.button{
+  width: 66px;
+  padding: 20px;
+  margin: 0 3px;
+  border: 2px solid black;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.row{
+  margin: 8px 0;
+}
+.row input{
+  width: 291px;
+  font-size: 20px;
+    margin: 0;
+    padding: 10px 0px;
+    border: 2px solid black;
     border-radius: 5px;
-    padding: 8px;
-  }
-  
-  .display input {
-    width: 80px;
-    border: 0px;
-    font-size: 1.2rem;
-    background: #eee;
-    text-align: center;
-  }
-  
-  .keyboard {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1;
-    gap: 4px;
-  }
-  
-  .keyboard button {
-    font-size: 1rem;
-  }
+}
