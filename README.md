@@ -28,4 +28,4 @@ Create your own calculator
   > Example:
   > ***
   > `<a href="/calculators/example-calculator">Example Calculator</a><br/>`
-7. Open your pull request.
+7. Open your pull request with "Closes #{your-issue-number}". Example "Closes #10".
