@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    max-width: 320px;
+  }
+  
+  .display,
+  .keyboard {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px;
+  }
+  
+  .display input {
+    width: 80px;
+    border: 0px;
+    font-size: 1.2rem;
+    background: #eee;
+    text-align: center;
+  }
+  
+  .keyboard {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1;
+    gap: 4px;
+  }
+  
+  .keyboard button {
+    font-size: 1rem;
+  }
