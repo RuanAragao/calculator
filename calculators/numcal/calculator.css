@@ -1,0 +1,27 @@
+
+body {
+    text-align: center;
+}
+
+.calculator {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ea6817;
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    width: 90%;
+    margin-bottom: 10px;
+    background-color: aqua;
+    padding: 5px;
+    font-size: 20px;
+}
+
+input[type="button"] {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    margin: 2px;
+}
