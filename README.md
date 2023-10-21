@@ -65,3 +65,7 @@ git push origin your-branch-name
 
 If you find any bugs or have any suggestions, please open an issue on GitHub and provide detailed information about the bug or suggestion.
 Once your pull request is submitted, it will be reviewed by the project maintainers.
+
+### [Making a pull request](https://docs.github.com/en/get-started/quickstart/contributing-to-projects#making-a-pull-request) 🔗 :octocat:
+
+### [Managing feedback](https://docs.github.com/en/get-started/quickstart/contributing-to-projects#managing-feedback) 🔗 :octocat:
