@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Count by weight</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+</head>
+<body>
+  <main>
+    <header class="row">
+      <div class="col">
+        <h1>Count by weight</h1>
+        <p>Calculate the number of items in a container by weight.</p>
+      </div>
+    </header>
+    <div>
+      <form>
+        <div class="row">
+          <div class="col">
+            <label for="sample-number">Sample number</label>
+            <input type="number" id="sample-number" name="sample-number" placeholder="Sample number" required value="1">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="sample-weight">Sample weight</label>
+            <input type="number" id="sample-weight" name="sample-weight" placeholder="Sample weight" required>
+          </div>
+          <div class="col">
+            <label for="sample-weight-unit">Sample weight unit</label>
+            <select id="sample-weight-unit" name="sample-weight-unit" required>
+              <option value="g">g</option>
+              <option value="kg">kg</option>
+              <option value="oz">oz</option>
+              <option value="lb">lb</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="container-weight">Container weight</label>
+            <input type="number" id="container-weight" name="container-weight" placeholder="Container weight" required>
+          </div>
+          <div class="col">
+            <label for="container-weight-unit">Container weight unit</label>
+            <select id="container-weight-unit" name="container-weight-unit" required>
+              <option value="g">g</option>
+              <option value="kg">kg</option>
+              <option value="oz">oz</option>
+              <option value="lb">lb</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="result">Result</label>
+            <input type="number" id="result" name="result" placeholder="Result" readonly>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="instructions">
+      <h2>Instructions</h2>
+      <p>Enter the sample number, sample weight, sample weight unit, container weight, and container weight unit. The result will be calculated automatically.</p>
+
+      <h3>Sample number</h3>
+      <p>Enter the number of items in the sample.</p>
+
+      <h3>Sample weight</h3>
+      <p>Enter the weight of the sample.</p>
+
+      <h3>Container weight</h3>
+      <p>Enter the weight of the container (total items).</p>
+
+      <h2>Formulas</h2>
+      <p>(sample weight / sample number) / container weight = number of items in container</p>
+    </div>
+    <footer>
+      <p>Created by <a href="https://ruanaragao.com.br" target="_blank">Ruan Aragão</a> | Powered by Calculator. Source code on <a href="https://github.com/RuanAragao/calculator">GitHub</a></p>
+    </footer>
+
+    <a class="github-fork-ribbon" href="https://github.com/RuanAragao/calculator" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+  </main>
+  <script src="./main.js" defer></script>
+</body>
+</html>
