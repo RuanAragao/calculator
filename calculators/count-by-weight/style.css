@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 1rem;
+}
+header {
+  margin-bottom: 1rem;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+.col:last-child {
+  margin-right: 0;
+}
+label {
+  margin-bottom: 0.5rem;
+}
+input,
+select {
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+input:invalid {
+  border: 1px solid red;
+}
+input:invalid:focus {
+  border: 1px solid red;
+}
+input:read-only {
+  background-color: #eee;
+}
+input:read-only:focus {
+  border: 1px solid #ccc;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]:invalid {
+  box-shadow: none;
+}
+input[type="number"]:focus {
+  box-shadow: none;
+}
+input[type="number"]:read-only {
+  box-shadow: none;
+}
+input[type="number"]:read-only:focus {
+  box-shadow: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:invalid {
+  box-shadow: none;
+}
+input[type="number"]:focus {
+  box-shadow: none;
+}
+input {
+  width: 100%;
+}
+
+.instructions {
+  margin-bottom: 1rem;
+}
+.instructions h2 {
+  margin-bottom: 0.5rem;
+}
+.instructions h3 {
+  margin-bottom: 0.5rem;
+}
+.instructions p {
+  margin-bottom: 0.5rem;
+}
