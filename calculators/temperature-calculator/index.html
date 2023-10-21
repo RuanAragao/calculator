@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous" />
+
+
+</head>
+
+<body>
+  <div class="converter-container">
+    <h1>Temperature Converter</h1>
+
+    <!-- Primeira Linha -->
+    <div class="input-container">
+      <div class="select-container">
+        <select id="unitSelector1">
+          <option value="C">(°C)</option>
+          <option value="F">(°F)</option>
+          <option value="K">(K)</option>
+        </select>
+        <div class="select-symbol">°</div>
+      </div>
+      <input type="text" id="temperatureInput1" class="input-field" placeholder="Enter temperature" />
+    </div>
+
+    <!-- Segunda Linha -->
+    <div class="input-container">
+      <div class="select-container">
+        <select id="unitSelector2">
+          <i class="fas fa-chevron-down select-icon"></i>
+          <option value="C">(°C)</option>
+          <option value="F">(°F)</option>
+          <option value="K">(K)</option>
+        </select>
+        <div class="select-symbol">°</div>
+      </div>
+      <input type="text" id="temperatureInput2" class="input-field" placeholder="Result" disabled />
+    </div>
+
+    <div id="result"></div>
+    <button onclick="convertTemperature()">Convert</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
