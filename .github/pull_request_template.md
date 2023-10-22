@@ -2,7 +2,7 @@
 
 ## Description (required)
 
-[Describe the purpose and context of this Pull Request.]
+A clear and concise description of what your calculator does or the problem/improvement it is solving.
 
 ## Checklist (required)
 
@@ -18,5 +18,4 @@ If applicable, add screenshots that help visualize the changes you made.
 
 ## Related Issues (required)
 
-[Link to any related issues or tasks.]
-
+Issue: #XXX [Link to any related issues or tasks.]
