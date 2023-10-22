@@ -11,6 +11,7 @@
 - [ ] I have updated the documentation.
 - [ ] I followed the standards described in the README.
 - [ ] I have reviewed and addressed any comments and feedback.
+- [ ] All dependencies have been updated or documented if applicable.
 
 ## Screenshots (optional)
 
