@@ -4,6 +4,9 @@ Create your own calculator
 
 ## How
 
+⚠️ Firstly, be willing to learn and/or teach. This project is not a PR farm for hacktoberfest.
+
+
 1. Star ✨ this project 👀🫶
 
 2. Go to [issues](https://github.com/RuanAragao/calculator/issues) and create a new. Add the name of your calculator in title and comment a short prupose of your calculator.
