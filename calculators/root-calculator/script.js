@@ -21,6 +21,6 @@ const calculate = (e)=>{
         ans.innerHTML = "The roots are real and equal : "  + r + " & " + r;
     }
     else if (d<0){
-        ans.innerHTML = "The roots doesn't exist";
+        ans.innerHTML = "The roots don't exist";
     }
 }
