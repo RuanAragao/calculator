@@ -1,5 +1,5 @@
 
-function f1(){
+function calculate(){
     const x = document.getElementById("original").value;
     const y = document.getElementById("discount").value;
     
@@ -11,7 +11,7 @@ function f1(){
     document.querySelector("#result").innerHTML=(`You saved Rs ${saving} <br> Discounted Price is Rs ${discounted_price}`);
 } 
 
-function f2(){
+function reset(){
     document.getElementById("original").value="";
     document.getElementById("discount").value="";
     document.getElementById("result").innerHTML="";
