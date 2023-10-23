@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary to Decimal Converter</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              purple: "#b3d4e4",
+            },
+          },
+        },
+        fontFamly: {
+          sans: ["Tahoma", "sans serif"],
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-purple font-mono">
+    <header class="bg-gray-300 p-3">
+      <h1 class="lg:text-2xl md:text-base font-bold">
+        Binary to decimal Converter
+      </h1>
+    </header>
+    <main>
+      <div
+        class="bg-gray-300 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-48 w-full sm:max-w-sm p-4 mt-5 border border-slate-600 rounded"
+      >
+        <div class="flex justify-between gap-3">
+          <div>
+            <label class="block font-bold text-xl mb-1">Decimal</label>
+            <input
+              type="number"
+              id="decimal-input"
+              class="relative text-base block w-full border border-slate-600 rounded p-3 focus:outline-purple"
+            />
+          </div>
+
+          <div>
+            <label class="block font-bold text-xl mb-1">Binary</label>
+            <input
+              type="number"
+              id="binary-input"
+              class="relative text-base w-full border border-slate-600 rounded p-3 focus:outline-purple"
+            />
+          </div>
+        </div>
+        <p
+          class="text-sm letter-0 text-red-500 text-center mt-4"
+          id="error-message"
+        ></p>
+      </div>
+    </main>
+    <script src="bin2dec.js"></script>
+  </body>
+</html>
