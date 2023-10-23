@@ -4,14 +4,14 @@ function convertTemperature() {
   const input1 = parseFloat(document.getElementById('temperatureInput1').value);
 
   if (isNaN(input1)) {
-    document.getElementById('result').innerText = 'Invalid input';
+    document.getElementById('error').innerText = 'Invalid input !';
     document.getElementById('temperatureInput2').value = '';
     return;
   }
 
   const result = convertTemperatureUnits(input1, unit1, unit2);
 
-  document.getElementById('result').innerText = '';
+  document.getElementById('error').innerText = '';
   document.getElementById('temperatureInput2').value = result.toFixed(2);
 }
 
@@ -34,10 +34,8 @@ function convertTemperatureUnits(value, fromUnit, toUnit) {
 
 function convertFromCelsius(value, toUnit) {
   switch (toUnit) {
-    case 'C':
-      return value;
     case 'F':
-      return (value * 9/5) + 32;
+      return (value * 9 / 5) + 32;
     case 'K':
       return value + 273.15;
     default:
@@ -48,11 +46,9 @@ function convertFromCelsius(value, toUnit) {
 function convertFromFahrenheit(value, toUnit) {
   switch (toUnit) {
     case 'C':
-      return (value - 32) * 5/9;
-    case 'F':
-      return value;
+      return (value - 32) * 5 / 9;
     case 'K':
-      return (value + 459.67) * 5/9;
+      return (value + 459.67) * 5 / 9;
     default:
       return NaN;
   }
@@ -63,9 +59,7 @@ function convertFromKelvin(value, toUnit) {
     case 'C':
       return value - 273.15;
     case 'F':
-      return (value * 9/5) - 459.67;
-    case 'K':
-      return value;
+      return (value * 9 / 5) - 459.67;
     default:
       return NaN;
   }
