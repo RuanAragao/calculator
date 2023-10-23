@@ -1,0 +1,27 @@
+body {
+    background-color: #785ff8;
+}
+
+.heading{
+    background: #785ff8;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 2px;
+    display: block;
+    color: rgb(0, 0, 0);
+    font-family: "Young Serif", serif;
+}
+
+.calculators{
+    background: #ead7c3;
+    margin-top: -5px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid #244ea4;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width : 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
