@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.calc_wrapper {
+    width: 75%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #e9f6f6;
+    box-shadow: 1px 2px 5px #514f4f;
+    margin-top: 25px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calbody {
+    width: 100%;
+}
+
+.sgpa {
+    margin-right: 2px;
+}
+
+.sgpa,
+.credit {
+    display: inline-block;
+    width: 49.5%;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+.sgpa:focus,
+.credit:focus {
+    border: 1px solid rgb(94, 191, 255);
+    outline: none;
+    transition: 0.3s all ease;
+    box-shadow: 0px 0px 10px rgb(94, 191, 255);
+}
+
+#calform {
+    width: 100%;
+}
+
+#resultbox {
+    font-size: 32px;
+    text-align: center;
+}
+
+.box1 {
+    border: 1px solid rgb(7, 205, 255);
+}
+
+.box2 {
+    margin-top: 10px;
+    border: 1px solid rgb(5, 255, 88);
+}
+
+.box2_hidden {
+    display: none;
+}
+
+.box1,
+.box2 {
+    border-radius: 5px;
+}
+
+#checkb {
+    margin-left: 5px;
+    display: none;
+}
+
+#checkb.visible {
+    display: block;
+}
+
+.studentask {
+    margin-left: 5px;
+    font-size: 11px;
+    color: #8c8c8c;
+}
+
+.cal_btn {
+    background: linear-gradient(to right, #8c301c, #4ca2cb) !important;
+    color: white;
+    font-size: large;
+}
+
+.cal_btn:hover {
+    background: linear-gradient(to right, #4ca2cb, #8c301c) !important;
+    color: black;
+}
+
+.caph {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.caph h1 {
+    color: #dfe6e0;
+}
+
+.pco {
+    display: inline-block;
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 20px;
+}
+
+.theme-check button {
+    font-size: 13px;
+    float: right;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: transparent;
+    outline: none;
+    border: 0.5px solid rgb(109, 108, 108);
+    margin-right: 5px;
+    color: #ddd;
+}
+
+.theme-check button:hover {
+    border-radius: 5px;
+    background: green;
+    color: #ddd;
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+    #resultbox {
+        font-size: 31px;
+    }
+}
+
+body {
+    background: #343535;
+    transition: 0.3s all ease;
+}
+
+.calc_wrapper {
+    background: #505353;
+}
+
+.sgpa,
+.credit,
+#semester_select {
+    border-color: #353333;
+    background: #343b40;
+    color: #ddd;
+}
+
+#result,
+.darkcheck-box {
+    color: #ddd;
+}
+
+.credit_text,
+.remarks_text {
+    color: #ddd;
+}
