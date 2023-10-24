@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CGPA Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link id="appStyleSheet" rel="stylesheet" href="styles/app.css">
+    <script src="calculator.js" defer></script>
+</head>
+
+<body>
+
+    <div class="calc_wrapper">
+        <div class="calbody mt-3">
+            <div class="caph">
+                <h1>CGPA Calculator</a></h1>
+            </div>
+            <div id="demoo">
+                <div class="row">
+                    <select name="semester_select" id="semester_select" class="form-control mb-3">
+                        <option value="0" disabled selected>--Select number of Semester--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                    </select>
+                    <div class="col p-1 box1">
+                        <div id="calform" class="text-center"></div>
+                        <div id="checkb" class="mb-2 mt-2">
+                            <input type="checkbox" id="diustd"><label for="diustd" class="studentask">Click here for
+                                autofill Demo</label for="diustd">
+                        </div>
+                        <button type="button" id="cal-btn" class="btn-block btn d-inline-block cal_btn"
+                            value="">Calculate</button>
+                    </div>
+                </div>
+                <div class="row box2 box2_hidden">
+                    <div class="col-4 d-flex justify-content-start align-items-center font-weight-bold credit_text">
+                    </div>
+                    <div class="col-4">
+                        <div id="resultbox" class="font-weight-bold"><span id="result" class="font-weight-bold"></span>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end align-items-center font-weight-bold remarks_text">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="co">
+            <p class="pco">Developed by <a href="https://github.com/devrudra9/" target="_blank">rudreshwar</a></p>
+            <span class="theme-check">
+                <button id="lightThemeCheck">Light Mode</button>
+                <button id="darkThemeCheck">Dark Mode</button>
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
