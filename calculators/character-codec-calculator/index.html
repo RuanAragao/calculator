@@ -1,0 +1,70 @@
+<head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    
+    <div class="container animate__animated animate__fadeInUp">
+      <form id="form" class="form">
+        <h2>ENCODE-DECODE</h2>
+
+        <ul>
+          <li>
+            <input type="radio" id="b64" name="selector">
+            <label for="b64">Base-64</label>
+            
+            <div class="check"></div>
+          </li>
+          
+          <li>
+            <input type="radio" id="msc" name="selector">
+            <label for="msc">Morse Code</label>
+            
+            <div class="check"><div class="inside"></div></div>
+          </li>
+          
+          <li>
+            <input type="radio" id="utf" name="selector">
+            <label for="utf">URL Code</label>
+            
+            <div class="check"><div class="inside"></div></div>
+          </li>
+        </ul>
+
+        <div class="switches-container">
+          <input type="radio" id="switchEncode" name="switchPlan" value="Encode" checked="checked"/>
+          <input type="radio" id="switchDecode" name="switchPlan" value="Decode" />
+          <label for="switchEncode">Encode</label>
+          <label for="switchDecode">Decode</label>
+          <div class="switch-wrapper">
+            <div class="switch">
+              <div>Encode</div>
+              <div>Decode</div>
+            </div>
+          </div>
+        </div>
+        
+        <br><br>
+
+        <div class="form-control">
+          <textarea
+            id="ip"
+            placeholder="Input"
+            rows="4"></textarea>
+        </div>
+        <div class="form-control">
+          <textarea
+            id="op"
+            placeholder="Output"
+            rows="4"></textarea>
+        </div>
+       
+        <button type="button" id="submit">Submit</button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+  
