@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <link rel="stylesheet" href="discount-calculator.css">
+</head>
+<body>
+    <div class="container">
+        <p class="heading">DISCOUNT CALCULATOR</p>
+        <p class="text"></p>
+        <label class="text">Original Price</label>
+        <input id="original" type="number" placeholder="Enter the original Price(in Rs)">
+
+        <label class="text">Discount</label>
+        <input id="discount" type="number" placeholder="Enter the Discount percentage">
+
+        <button id="submit" onclick="calculate()">Submit</button>
+        <button id="reset" onclick="reset()">Reset</button>
+
+        <span id="result" class="result"></span>
+
+        <script src="discount-calculator.js"></script>
+
+    </div>
+</body>
+</html>

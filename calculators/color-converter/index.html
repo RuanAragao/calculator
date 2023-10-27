@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Color Converter</h1>
+        <div class="color-input">
+            <input type="text" id="colorInput" placeholder="Enter color code (#RRGGBB)">
+            <select id="colorFormat">
+                <option value="hex" data-format="#RRGGBB">HEX</option>
+                <option value="rgb" data-format="e.g., rgb(255, 0, 0)">RGB</option>
+                <option value="hsl" data-format="e.g., hsl(0, 100%, 50%)">HSL</option>
+                <option value="cmyk" data-format="e.g., cmyk(0%, 100%, 100%, 0%)">CMYK</option>
+            </select>
+            <button id="convertButton">Convert</button>
+        </div>
+        <div class="color-display" id="colorDisplay"></div>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
