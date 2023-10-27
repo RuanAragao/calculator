@@ -1,46 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Calcy is a comprehensive collection of calculators for finance, engineering, science, and more. Find the perfect calculator for your needs and start calculating today!"
+    />
+    <!-- Always include this line of code!!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description"
-    content="Calcy is a comprehensive collection of calculators for finance, engineering, science, and more. Find the perfect calculator for your needs and start calculating today!" />
-  <!-- Always include this line of code!!! -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicons -->
+    <link rel="icon" href="img/favicons/favicon-64.png" />
+    <!-- Favicon for Apple devices -->
+    <link rel="apple-touch-icon" href="img/favicons/favicon-192.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
 
-  <!-- Favicons -->
-  <link rel="icon" href="img/favicons/favicon-64.png" />
-  <!-- Favicon for Apple devices -->
-  <link rel="apple-touch-icon" href="img/favicons/favicon-192.png" />
-  <link rel="manifest" href="manifest.webmanifest" />
+    <title>Calcy &mdash; The Ultimate Calculator Collection</title>
+  </head>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE" />
+      <meta
+        name="description"
+        content="Calcy is a comprehensive collection of calculators for finance, engineering, science, and more. Find the perfect calculator for your needs and start calculating today!"
+      />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Calcy &mdash; The Ultimate Calculator Collection</title>
-</head>
+      <link rel="icon" href="img/favicons/favicon-64.png" />
+      <link rel="apple-touch-icon" href="img/favicons/favicon-192.png" />
+      <link rel="manifest" href="manifest.webmanifest" />
 
-<body>
-  <h1>Calculators</h1>
-  <hr />
-  <!-- Add below -->
-  <a href="./calculators/example-calculator/index.html">Example Calculator</a><br />
-  <a href="/calculators/cgpa-calculator">CGPA Calculator</a><br/>
-  <a href="./calculators/currency-calculator/index.html">Currency Calculator</a><br />
-  <a href="./calculators/body-mass-index-calculator/index.html">Body Mass Index Calculator</a><br />
-  <a href="./calculators/bitwise-calculator/index.html">Bitwise calculator</a><br>
-  <a href="./calculators/find-age-calculator">Age Calculator</a><br />
-  <a href="./calculators/temperature-calculator/">temperature Calculator</a><br />
-  <a href="./calculators/tip-calculator">Tip Calculator</a><br />
-  <a href="./calculators/PX-to-EM-converter/index.html">Pixel to Em Converter </a><br />
-  <a href="./calculators/count-by-weight/index.html">Count by Weight</a><br />
-  <a href="./calculators/discount-calculator/index.html">Discount Calculator</a><br />
-  <a href="./calculators/invesrment-calculator/index.html">Investment Calculator</a><br />
-  <a href="./calculators/number-system-calculator/index.html">Number System Calculator</a><br />
-  <a href="./calculators/Body Fat-calculator/index.html">Body-Fat-Calculator</a><br />
-  <a href="./calculators/compound-interest-calculator/index.html">Compound Interest Calculator</a><br />
-  <a href="./calculators/root-calculator/index.html">Quadratic Root Calculator</a><br />
-  <a href="./calculators/color-converter/index.html">COlor Converter</a><br />
-  <a href="./calculators/2-8-16-calculator/index.html">2-8-16 Calculator</a><br/>
-  <a href="./calculators/distance-calculator/">Distance Calculator</a><br />
-</body>
+      <title>Calcy &mdash; The Ultimate Calculator Collection</title>
 
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #53abbf;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+        }
+
+        .calculator-container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(6, 1fr);
+          gap: 20px;
+          max-width: 800px;
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .calculator-link {
+          text-decoration: none;
+          background-color: #5d8bbb;
+          color: #fff;
+          padding: 10px 0;
+          border-radius: 5px;
+          display: block;
+          text-align: center;
+          transition: background-color 0.3s;
+        }
+
+        .calculator-link:hover {
+          background-color: #0056b3;
+        }
+      </style>
+    </head>
+
+    <body>
+      <h1>Calculators</h1>
+      <div class="calculator-container">
+        <a
+          class="calculator-link"
+          href="./calculators/example-calculator/index.html"
+          >Example Calculator</a
+        >
+        <a class="calculator-link" href="/calculators/cgpa-calculator"
+          >CGPA Calculator</a
+        >
+        <a
+          class="calculator-link"
+          href="./calculators/currency-calculator/index.html"
+          >Currency Calculator</a
+        >
+        <a
+          class="calculator-link"
+          href="./calculators/body-mass-index-calculator/index.html"
+          >Body Mass Index Calculator</a
+        >
+        <a
+          class="calculator-link"
+          href="./calculators/bitwise-calculator/index.html"
+          >Bitwise Calculator</a
+        >
+        <a class="calculator-link" href="./calculators/find-age-calculator"
+          >Age Calculator</a
+        >
+        <a class="calculator-link" href="./calculators/temperature-calculator/"
+          >Temperature Calculator</a
+        >
+        <a class="calculator-link" href="./calculators/tip-calculator"
+          >Tip Calculator</a
+        >
+        <a
+          class="calculator-link"
+          href="./calculators/PX-to-EM-converter/index.html"
+          >Pixel to Em Converter</a
+        >
+        <a
+          class="calculator-link"
+          href="./calculators/count-by-weight/index.html"
+          >Count by Weight</a
+        >
+        <a
+          class="calculator-link"
+          href="./calculators/discount-calculator/index.html"
+          >Discount Calculator</a
+        >
+        <a
+          class="calculator-link"
+          href="./calculators/invesrment-calculator/index.html"
+          >Investment Calculator</a
+        >
+        <a
+          class="calculator-link"
+          href="./calculators/number-system-calculator/index.html"
+          >Number System Calculator</a
+        >
+        <a
+          class="calculator-link"
+          href="./calculators/Body Fat-calculator/index.html"
+          >Body Fat Calculator</a
+        >
+        <a
+          class="calculator-link"
+          href="./calculators/compound-interest-calculator/index.html"
+          >Compound Interest Calculator</a
+        >
+        <a
+          class="calculator-link"
+          href="./calculators/root-calculator/index.html"
+          >Quadratic Root Calculator</a
+        >
+        <a
+          class="calculator-link"
+          href="./calculators/color-converter/index.html"
+          >Color Converter</a
+        >
+        <a
+          class="calculator-link"
+          href="./calculators/2-8-16-calculator/index.html"
+          >2-8-16 Calculator</a
+        >
+        <a class="calculator-link" href="./calculators/distance-calculator/"
+          >Distance Calculator</a
+        >
+      </div>
+    </body>
+  </html>
 </html>
