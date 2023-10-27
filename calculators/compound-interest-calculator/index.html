@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compound Interest Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Compound Interest Calculator</h1>
+        <form id="compoundInterestForm">
+            <label for="principal">Principal Amount ($):</label>
+            <input type="number" id="principal" step="any" required><br><br>
+            <label for="rate">Annual Interest Rate (%):</label>
+            <input type="number" id="rate" step="any" required><br><br>
+            <label for="time">Time Period (years):</label>
+            <input type="number" id="time" step="any" required><br><br>
+            <label for="compoundingFrequency">Compounding Frequency:</label>
+            <select id="compoundingFrequency" required>
+                <option value="1">Annually</option>
+                <option value="2">Semi-annually</option>
+                <option value="4">Quarterly</option>
+            </select><br><br>
+            <input type="button" value="Calculate" onclick="calculateCompoundInterest()">
+        </form>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
