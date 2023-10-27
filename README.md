@@ -9,7 +9,7 @@ Create your own calculator
 
 1. Star ✨ this project 👀🫶
 
-2. Go to [issues](https://github.com/RuanAragao/calculator/issues) and create a new. Add the name of your calculator in title and comment a short prupose of your calculator.
+2. Go to [issues](https://github.com/RuanAragao/calculator/issues) and create a new. Add the name of your calculator in title and comment a short purpose of your calculator.
 
 > Example:
 >
@@ -33,7 +33,7 @@ Create your own calculator
 >
 > `mkdir example-calculator` > `[root]/calculators/example-calculator`
 
-5. Iside your folder calculator is required `index.html` file with your calculator.
+5. Inside your folder calculator is required `index.html` file with your calculator.
 6. Edit the [/index.html](/index.html) file and add the your calculator folder link in alphabetical order with a `<br>` in the end.
    > Example:
    >
