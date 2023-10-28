@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Binary Operations Calculator</title>
+	</head>
+	<body>
+		<div id="container">
+			<h1>Binary Operations Calculator</h1>
+			<input type="text" id="firstNum" placeholder="Enter first number" />
+			<input type="text" id="secNum" placeholder="Enter second number" />
+
+			<select id="operation">
+				<option value="+">ADD (+)</option>
+				<option value="-">SUBTRACT (-)</option>
+				<option value="*">MULTIPLY (*)</option>
+				<option value="/">DIVIDE (/)</option>
+				<option value="&">AND (&)</option>
+				<option value="|">OR (|)</option>
+				<option value="^">XOR (^)</option>
+			</select>
+			<div id="output"></div>
+			<button onclick="solve()">Solve</button>
+		</div>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
