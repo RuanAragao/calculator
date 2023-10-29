@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <div class="section">
+            <h2>Length</h2>
+            <div class="converter">
+                <div class="input-group">
+                    <input type="number" id="length-from" placeholder="Enter value">
+                    <select id="length-from-unit"></select>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="length-to" disabled>
+                    <select id="length-to-unit"></select>
+                </div>
+                <button onclick="convertLengthUnit()">Convert</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Weight</h2>
+            <div class="converter">
+                <div class="input-group">
+                    <input type="number" id="weight-from" placeholder="Enter value">
+                    <select id="weight-from-unit"></select>
+                </div>
+                <div class "input-group">
+                    <input type="number" id="weight-to" disabled>
+                    <select id="weight-to-unit"></select>
+                </div>
+                <button onclick="convertWeightUnit()">Convert</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Volume</h2>
+            <div class="converter">
+                <div class="input-group">
+                    <input type="number" id="volume-from" placeholder="Enter value">
+                    <select id="volume-from-unit"></select>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="volume-to" disabled>
+                    <select id="volume-to-unit"></select>
+                </div>
+                <button onclick="convertVolumeUnit()">Convert</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
