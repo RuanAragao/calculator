@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+.intro{
+    text-align: center;
+}
+.cal{
+    border: 1px solid black;
+    width: fit-content;
+    margin: 10px auto;
+    padding: 5px;
+    background-color: grey;
+}
+#screen{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 255, 0);
+    border-top: 2px solid darkolivegreen;
+    border-left: 2px solid darkolivegreen;
+    border-bottom: 2px solid darkgreen;
+    border-right: 2px solid darkgreen;
+    height: 100px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#calculations{
+    font-size: 45px; 
+    margin: 0px;
+}
+#preview{
+    font-size: 30px;
+    margin: 0px;
+}
+
+.buttonArea{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2px;
+}
+button{
+    width: 70px;
+    height: 70px;
+    color: white;
+    background-color: black;
+    margin: 1px;
+    border-color: whitesmoke;
+}
+.leftBtn{
+    display: flex;
+    flex-direction: column;
+}
+.func{
+    display: flex;
+}
+.num{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.numBtn{
+    width: 33%;
+}
+.rightBtn{
+    display: flex;
+    flex-direction: column;
+}
+#equal{
+    background-color: orange;
+    border-color: orange;
+}
+
