@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./cal.css" />
+  </head>
+  <body>
+    <header>
+      <div class="intro">
+        <h1 id="intro">Calculator App</h1>
+      </div>
+    </header>
+
+    <div class="cal">
+      <div id="screen">
+        <div><p id="calculations"></p></div>
+      </div>
+      <div class="buttonArea">
+        <div class="leftBtn">
+          <div class="func">
+            <button class="funcBtn btn" id="clear">clear</button>
+            <button class="funcBtn" id="del">del</button>
+            <button class="funcBtn" id="spcl"></button>
+          </div>
+
+          <div class="num">
+            <div class="row">
+              <button class="numBtn btn" id="7">7</button>
+              <button class="numBtn btn" id="8">8</button>
+              <button class="numBtn btn" id="9">9</button>
+            </div>
+            <div class="row">
+              <button class="numBtn btn" id="4">4</button>
+              <button class="numBtn btn" id="5">5</button>
+              <button class="numBtn btn" id="6">6</button>
+            </div>
+            <div class="row">
+              <button class="numBtn btn" id="1">1</button>
+              <button class="numBtn btn" id="2">2</button>
+              <button class="numBtn btn" id="3">3</button>
+            </div>
+            <div class="row">
+              <button class="numBtn btn" id="sign"></button>
+              <button class="numBtn btn" id="0">0</button>
+              <button class="numBtn btn" id="."></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="rightBtn">
+          <button class="operators btn" id="divide">/</button>
+          <button class="operators btn" id="multiply">*</button>
+          <button class="operators btn" id="add">+</button>
+          <button class="operators btn" id="subtract">-</button>
+          <button class="operators btn" id="equal">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./cal.js"></script>
+  </body>
+</html>
