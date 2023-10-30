@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary to Decimal Converter</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            container: {},
+            colors: {
+              purple: "#6f42c1",
+            },
+          },
+        },
+        fontFamly: {
+          sans: ["Tahoma", "sans serif"],
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-purple font-mono">
+    <header class="bg-gray-300 p-3">
+      <h1 class="lg:text-2xl md:text-base font-bold">
+        Binary to decimal Converter
+      </h1>
+    </header>
+    <main>
+      <div
+        class="bg-gray-300 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-48 w-full sm:max-w-sm p-4 mt-5 border border-slate-600 rounded"
+      >
+        <div class="flex justify-between gap-3">
+          <div>
+            <label class="block font-bold text-xl mb-1">Decimal</label>
+            <input
+              type="number"
+              id="decimal-input"
+              class="relative text-base block w-full border border-slate-600 rounded p-3 focus:outline-purple"
+            />
+          </div>
+
+          <div>
+            <label class="block font-bold text-xl mb-1">Binary</label>
+            <input
+              type="number"
+              id="binary-input"
+              class="relative text-base w-full border border-slate-600 rounded p-3 focus:outline-purple"
+            />
+          </div>
+        </div>
+        <h1
+          class="text-base text-red-500 font-bold text-center mt-4"
+          id="error-message"
+        ></h1>
+      </div>
+    </main>
+    <script>
+      let binaryNumberInput = document.getElementById("binary-input");
+      let errorMessageDisplay = document.getElementById("error-message");
+      let decimalNumberOutput = document.getElementById("decimal-input");
+
+      // convert decimal to binary when user input the binary field
+      decimalNumberOutput.addEventListener("input", function () {
+        // get decimal value entered
+        const decimalValue = parseInt(decimalNumberOutput.value);
+
+        // convert to binary and update binary input field
+        binaryNumberInput.value = decimalValue.toString(2);
+      });
+
+      binaryNumberInput.addEventListener("input", function () {
+        // get user input
+        const binaryValue = binaryNumberInput.value;
+
+        // validate input
+        if (isValidBinary(binaryValue)) {
+          // convert to decimal and output
+          decimalNumberOutput.value = parseInt(binaryValue, 2);
+          errorMessageDisplay.textContent = "";
+        } else {
+          //  show error message
+          errorMessageDisplay.textContent =
+            "Please enter a valid binary number";
+        }
+
+        // validate binary input
+        function isValidBinary(binaryStr) {
+          // loop through each character in input
+          for (let char of binaryStr) {
+            // check if character is 0 or 1
+            if (char !== "0" && char !== "1") {
+              return false;
+            }
+          }
+          // input contains only 0s and 1s
+          return true;
+        }
+      });
+    </script>
+  </body>
+</html>
