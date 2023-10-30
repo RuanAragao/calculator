@@ -1,0 +1,13 @@
+// Input Fields: 1. P = Monthly Investment 
+//               2. Expected Return Rate (p.a.)
+//               3. T = Time Period
+
+// Output Fields: 1. Amount Invested = P*12*T
+//                2. Gains
+//                3. Total Value = Investment Amount + Gains
+
+
+// Monthly Return Amount = Expected Return Rate (p.a.)  / 12
+
+
+// Calculation: Amount invested × ({[1 + Monthly Return Amount] Total number payments – 1} / Monthly Return Amount) × (1 + Monthly Return Amount)
