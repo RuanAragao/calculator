@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Crontab Expression Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Crontab Expression Generator</h1>
+        <form>
+            <div class="form-group">
+                <label for="minute">Minute</label>
+                <input type="text" class="form-control" id="minute" placeholder="0-59" value="*">
+            </div>
+            <div class="form-group">
+                <label for="hour">Hour</label>
+                <input type="text" class="form-control" id="hour" placeholder="0-23" value="*">
+            </div>
+            <div class="form-group">
+                <label for="day">Day of Month</label>
+                <input type="text" class="form-control" id="day" placeholder="1-31" value="*">
+            </div>
+            
+            <div class="form-group">
+                <label for="month">Month</label>
+                <input type="text" class="form-control" id="month" placeholder="1-12" value="*">
+            </div>
+            <div class="form-group">
+                <label for="dow">Day of Week</label>
+                <input type="text" class="form-control" id="dow" placeholder="0-7 (Sun=0 or 7)" value="*">
+            </div>
+            <button type="button" class="btn btn-primary" id="generate">Generate</button>
+        </form>
+        <div class="output">
+            <label for="result">Crontab Expression</label>
+            <input type="text" class="form-control" id="result" readonly>
+            <label for="description">Description</label>
+            <input type="text" class="form-control" id="description" readonly>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Zone Difference Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: #ffffff;
+            margin: 20px auto;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            margin-top: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Time Zone Difference Calculator</h1>
+        <form id="timeZoneDifferenceForm">
+            <label for="sourceTimeZone">Source Time Zone (e.g., America/New_York):</label>
+            <input type="text" id="sourceTimeZone" required><br><br>
+            <label for="targetTimeZone">Target Time Zone (e.g., Europe/London):</label>
+            <input type="text" id="targetTimeZone" required><br><br>
+            <input type="button" value="Calculate" onclick="calculateTimeZoneDifference()">
+        </form>
+        <p id="result"></p>
+    </div>
+    <script>
+        function calculateTimeZoneDifference() {
+            const sourceTimeZone = document.getElementById("sourceTimeZone").value;
+            const targetTimeZone = document.getElementById("targetTimeZone").value;
+
+            // Create Date objects with the specified time zones
+            const sourceTime = new Date().toLocaleString('en-US', { timeZone: sourceTimeZone });
+            const targetTime = new Date().toLocaleString('en-US', { timeZone: targetTimeZone });
+
+            // Calculate the time difference
+            const sourceDateTime = new Date(sourceTime);
+            const targetDateTime = new Date(targetTime);
+
+            const differenceInMilliseconds = targetDateTime - sourceDateTime;
+            const duration = differenceInMilliseconds / 60000; // Convert to minutes
+
+            const hoursDifference = Math.floor(duration / 60);
+            const minutesDifference = duration % 60;
+
+            document.getElementById("result").innerHTML = `Time Difference: ${Math.abs(hoursDifference)} hours and ${Math.abs(minutesDifference)} minutes`;
+        }
+    </script>
+</body>
+</html>

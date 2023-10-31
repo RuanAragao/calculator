@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Body Fat Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 40px;
+            background: #5390d1;
+            box-shadow:10px 10px #000000;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        button {
+            background-color: #000000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        #result {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Body Fat Calculator</h1>
+        <label for="waist">Waist Circumference (inches):</label>
+        <input type="number" id="waist">
+        <label for="neck">Neck Circumference (inches):</label>
+        <input type="number" id="neck">
+        <button onclick="calculateBodyFat()">Calculate</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function calculateBodyFat() {
+            const waist = parseFloat(document.getElementById("waist").value);
+            const neck = parseFloat(document.getElementById("neck").value);
+
+            if (isNaN(waist) || isNaN(neck)) {
+                alert("Please enter valid measurements.");
+                return;
+            }
+
+            const bodyFatPercentage = calculateUSNavyBodyFat(waist, neck);
+            const resultElement = document.getElementById("result");
+            resultElement.textContent = `Estimated Body Fat Percentage: ${bodyFatPercentage.toFixed(2)}%`;
+        }
+
+        function calculateUSNavyBodyFat(waist, neck) {
+            const bodyFat = 86.010 * Math.log10(waist - neck) - 70.041 * Math.log10(neck) + 30.30;
+            return bodyFat;
+        }
+    </script>
+</body>
+</html>

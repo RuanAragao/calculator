@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bitwise Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Bitwise Calculator</h2>
+        <label for="num1">Number 1:</label>
+        <input type="number" id="num1" placeholder="Enter number 1">
+        <label for="num2">Number 2:</label>
+        <input type="number" id="num2" placeholder="Enter number 2">
+    
+        <label for="operation">Operation:</label>
+        <select id="operation">
+            <option value="and">AND</option>
+            <option value="or">OR</option>
+            <option value="xor">XOR</option>
+        </select>
+        <br>
+        <button onclick="calculate()">Calculate</button><br>
+        <label for="result">Result:</label>
+        <input type="text" id="result" readonly>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
