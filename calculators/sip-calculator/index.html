@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SIP Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>SIP Calculator</h1>
+    <form>
+     
+      <div class="form-control">
+        <label for="monthly-investment">Monthly Investment Amount (in Rs.)</label>
+        <input type="number" id="monthly-investment" name="monthly-investment" required>
+      </div>
+      <div class="form-control">
+        <label for="rate-of-interest">Rate of Interest (in % per annum)</label>
+        <input type="number" id="rate-of-interest" name="rate-of-interest" required>
+      </div>
+      <div class="form-control">
+        <label for="time-period">Time Period (in years)</label>
+        <input type="number" id="time-period" name="time-period" min="1" required>
+        
+      </div>
+      <button type="button" id ="calcButton">Calculate</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
